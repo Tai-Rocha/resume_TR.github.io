@@ -1,2 +1,2 @@
 # resume_TR.github.io
-short version of CV
+[Resume portugês](https://tai-rocha.github.io/resume_TR.github.io/)
