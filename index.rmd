@@ -1,0 +1,274 @@
+---
+title: "Tainá Rocha's CV"
+author: Tainá Rocha
+date: "`r Sys.Date()`"
+params:
+  pdf_mode:
+    value: true
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'custom.css','resume']
+    self_contained: true
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r metathis, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "Tai-Rocha/Tai-Rocha_CV_PT.github.io") %>% 
+  meta_social(
+    title = "Tainá Rocha CV PT",
+    description = paste(
+      "CV made with the packages RMarkdown, pagedown, datadrivencv and googlesheet4"
+    ),
+    url = "https://github.com/Tai-Rocha/Tai-Rocha_CV.github.io/cv.html",
+    image = "https://beatrizmilz.github.io/resume/img/share-card.png",
+    image_alt = paste(
+      "Tainá Rocha CV PT"
+    ),
+    og_type = "website",
+    og_author = "Tainá Rocha",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@Tai_Rocha_"
+  )
+```
+
+<!-- inicio academic icons -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<!-- final academic icons -->
+
+<!-- inicio font awesome -->
+
+```{=html}
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+```
+<!-- final font awesome -->
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(magrittr) # For the pipe
+source("cv_printing_functions.r")
+# Read in all data and initialize a CV printer object
+CV <- create_CV_object(
+  data_location = "https://docs.google.com/spreadsheets/d/1MUKWLJtWwxwiAsSwOghy1tkq41rTp9Ivt6y3LVx2JTI/edit#gid=917338460",  
+  pdf_mode = params$pdf_mode
+)
+
+CV$entries <- CV$entries %>% dplyr::filter(in_resume == TRUE)
+
+```
+
+```{r}
+# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+if(params$pdf_mode) {
+    cat("
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>")
+}
+```
+
+# Aside
+
+```{r, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/CV_profile.jpg")
+# Build interactive network of positions colored by section
+# and connected if they occurred in the same year
+#datadrivencv::build_network_logo(CV$entries_data) Foto aqui
+```
+
+```{r}
+ if(params$pdf_mode){
+  cat("<i class='fas fa-download'></i> [CV disponível em PDF](https://github.com/Tai-Rocha/TR_CV_PT.github.io/raw/main/TR_cv_pt.pdf)")
+  } else {
+  cat("[Versão online disponível](https://tai-rocha.github.io/TR_CV_PT.github.io/)")
+}
+```
+
+## Competências {#competências}
+
+
+<i class="fab fa-r-project fa-2x"></i> 
+
+<i class="fas fa-code-branch fa-2x"></i> `Git`
+
+<i class="fab fa-github fa-2x"></i> `GitHub`
+
+<i class="fab fa-markdown fa-2x"></i> `Markdown`
+
+<i class="fa fa-linux fa-2x" aria-hidden="true"></i>
+ `Linux OS`
+ 
+<i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
+ `Virtual Machines`
+ 
+
+```{r echo=FALSE, out.width="23%"}
+knitr::include_graphics("images/cloud.png")
+```
+`Cloud Services`
+
+```{r echo=FALSE, out.width="16%"}
+knitr::include_graphics("images/gee.jpeg")
+``` 
+`Google Earth Engine`
+
+```{r echo=FALSE, out.width="13%"}
+knitr::include_graphics("images/QGIS.png")
+``` 
+`GIS`
+
+```{r echo=FALSE, out.width="20%"}
+knitr::include_graphics("images/ARCGIS.png")
+``` 
+
+# Main
+
+## Tainá Rocha {#title}
+
+::: {style="text-align: justify"}
+Pesquisadora e cientista de dados com enfoque nos impactos de mudanças globais (mudanças climáticas e de uso e cobertura do solo). Meus interesses e trabalhos recentes são: **1.** Análises de dados climáticos e dados de uso e cobertura da terra em diferentes cenários/projeções **2.** Análises de dados de biodiversidade, **3.** Modelos preditivos **4.** Análises espaciais com SIG, **5.** Bioinformática, Linguagem R, Google Earth Engine, etc. Uso ferramentas, bases dados e plataformas de código aberto.Tenho interesse em boas práticas da ciência aberta, bons fluxos de trabalho, reprodutibilidade e princípios FAIR. <br>
+Versão exapandida em [PT](https://tai-rocha.github.io/TR_CV_PT.github.io/) ou [EN](https://tai-rocha.github.io/Tai-Rocha_CV.github.io/) 
+:::
+
+## Experiência profissional {data-icon="id-badge"}
+
+### Pequisadora de pós-doutorado <br>[Programa de Pesquisa em Biodiversidade (PPBio)](https://biologiadaconservacao.com.br/ppbio) 
+
+[Repo <i class="fa fa-github"></i>](https://github.com/PPBio) Impactos das mudanças globais sobre a biodiversidade brasileira e os serviços ecossistêmicos. <br/> Atividades: 1- Compilação de dados gerados pelo programa. 2- Avaliação do uso e cobertura da terra ([coleção 7 mapbiomas](https://mapbiomas.org/colecoes-mapbiomas-1?cama_set_language=pt-BR)) para os sítios PPBIo.
+
+Brasil
+
+Maio 2022 - Atual
+
+### Pesquisadora convidada <br> [Laboratório do Dr. Xiao Feng, Department of Geography, Florida State University](https://lab.fengxiao.info/group-members) 
+
+Atividades: Colaboração em pesquisas sobre biodiversidade e mudanças globais.<br> [Repo <i class="fa fa-github"></i>](https://github.com/BiogeographyLab/gridder.github.io) Desenvolvimento de pacote R para dados de biodiversidade. <br/>
+Vencedores do prêmino [GBIF Ebbe Nielsen Challenge 2022](https://www.gbif.org/news/6J94JrRZtDCPhUZMMiTALq/gridder-and-bdc-share-top-honors-in-2022-gbif-ebbe-nielsen-challenge) de inovações em dados abertos para a biodiversidade.
+ 
+Remoto
+
+Nov 2021 - Atual
+
+
+### Consultora/Pesquisadora em Biodiversidade no [CNCFlora](http://cncflora.jbrj.gov.br/portal)
+
+[Repo <i class="fa fa-github"></i>](https://github.com/IUCN-Green-Status-CNCFlora) [IUCN Green Status](https://www.iucn.org/commissions/species-survival-commission/resources/iucn-green-status-species) para 10 espécies ameaçadas do Cerrado brasileiro para teste de métricas de recuperação de espécie.<br> Uso de modelos preditivos de nicho de espécies e distribuição potencial em cenários atuais e de mudanças climáticas futuras. Pós processamento dos modelos com dados de uso e cobertura da terra da [coleção 6 mapbiomas](https://mapbiomas.org/colecoes-mapbiomas-1?cama_set_language=pt-BR).
+
+Jardim Botânico-RJ, Brasil
+
+Ago 2019 - Mar 2021
+
+
+### Pequisadora de pós-doutorado pelo programa [Modelagem do Sistema Terrestre](https://www.gov.br/capes/pt-br/acesso-a-informacao/acoes-e-programas/bolsas/programas-estrategicos/formacao-de-recursos-humanos-em-areas-estrategicas/programa-de-desenvolvimento-de-modelagem-do-sistema-terrestre) |Supervisão: [Marinez F.Siqueira](https://scholar.google.com.br/citations?user=Faiq46QAAAAJ&hl=en)
+
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Caatinga_Dry_Forest.github.io)
+Diversidade na composição de espécies (beta diversidade) na Caatinga de
+cristalino usando modelos preditivos de dissimilaridade generalizada (GDM) e Métricas de Baselga. <br> <br>
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/S_rubricaulis_bryophytes)
+Variação climática na distribuição de *Syzygiella rubricaulis*
+(Briófitas).<br> <br>
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Bryophyte-Amazon-mountains)
+Primeiro estudo de diversidade de briófitas das montanhas da Amazônia brasileira.<br> <br>
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/ENM_Dimorphandra-wilsonii-Rizzini)
+Modelos preditivos de nicho ecológico e de distribuição da espécies *Dimorphandra wilsonii* (Fabaceae) apresentado no plano de atividades trianuais do
+Brazilian Plant Red List Authority membro do Plant Conservation Commitee
+entre 2017-2020 e do Species Survival Comission da International Union
+for Conservation of Nature (IUCN).<br> <br>
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Ferns-and-lycophytes)
+Diversidade de samambaias e licófitas da Floresta da Tijuca.<br> <br>
+
+Jardim Botânico-RJ, Brasil
+
+2019 - 2021
+
+::: aside
+
+#### Contato
+
+<i class="fa fa-tree"></i> [Linktree](https://linktr.ee/tai_rocha)
+
+<i class="fa fa-github"></i> [Github](https://github.com/Tai-Rocha)
+
+<i class="fas fa-eye"></i> [Lattes](http://lattes.cnpq.br/3678449749062447)
+
+<i class="fab fa-linkedin"></i>
+[Linkedin](https://www.linkedin.com/in/tai-rocha/)
+
+<i class="fab fa-orcid"></i>
+[ORCID](https://orcid.org/0000-0001-6874-2447)
+
+<i class="fab fa-researchgate"></i>
+[Researchgate](https://www.researchgate.net/profile/Taina-Rocha-3)
+
+<i class="far fa-envelope"></i>
+[taina013\@gmail.com](mailto:taina013@gmail.com){.email}
+
+<i class="fab fa-twitter"></i> [Twitter](https://twitter.com/Tai_Rocha_)
+
+<i class="fas fa-blog"></i> [Website](https://github.com/Tai-Rocha)
+:::
+
+### Pequisadora de desenvolvimento tecnólogico e inovação pelo [INCT EECBio](https://www.eecbio.ufg.br/) | Supervisão: [Mariana M. Vale](https://scholar.google.com/citations?user=bQAx5E0AAAAJ&hl=en)
+
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/LUH2_Data)
+Global land-use and land-cover data for ecologists: historical, current
+and future scenarios.<br> <br>
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Carpornis_melanocephala)
+Modelos preditivos de nicho para espécie *Carpornis melanocephala* (Passeriformes:
+Cotingidae) no estado do Rio de Janeiro State, Brazil.<br> <br>
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Vole)
+Modelos preditivos de nicho para espécies de roedores (Voles). <br> <br>
+[Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Disjoint_birds_AM_AF)
+Modelos preditivos de aves com distribuição disjunta entre as florestas da Amazônia e Mata Atlântica. Teste de hipóteses das possíveis conexões entre essas florestas ao longo do tempo. <br> <br>
+
+UFRJ- Brasil
+
+2017 - 2019
+
+
+## EDUCAÇÃO {data-icon="user-graduate" data-concise="true"}
+
+### Doutorado em Zoologia
+
+Museu Paraense Emílio Goeldi
+
+PA- Brasil
+
+2013 - 2017
+
+### Mestrado em Biologia Ambiental
+
+Universidade Federal do Pará
+
+PA- Brasil
+
+2010 - 2012
+
+### Licenciatura Plena em Ciências Biológicas
+
+Universidade Federal do Pará
+
+Bragança, PA- Brasil
+
+2006 - 2010
+
+::: {.aside}
+
+Este currículo foi feito com os pacotes R
+[**pagedown**](https://github.com/rstudio/pagedown) e
+[**datadrivencv**](http://nickstrayer.me/datadrivencv/index.html).
+
+Código disponível no <i class="fa fa-github"></i>
+[GitHub](https://github.com/Tai-Rocha/TR_CV_PT.github.io).
+
+Última atualização em `r Sys.Date()`. A versão mais recente está [disponível aqui](https://github.com/Tai-Rocha/TR_CV_PT.github.io/blob/main/TR_cv_pt.pdf).
+:::
