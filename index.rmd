@@ -224,7 +224,7 @@ Global land-use and land-cover data for ecologists: historical, current
 and future scenarios.<br> <br>
 [Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Carpornis_melanocephala)
 Modelos preditivos de nicho para espécie *Carpornis melanocephala* (Passeriformes:
-Cotingidae) no estado do Rio de Janeiro State, Brazil.<br> <br>
+Cotingidae) no estado do Rio de Janeiro State, Brazil. Pós processamento dos modelos com coleção 4 mapbiomas <br> <br>
 [Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Vole)
 Modelos preditivos de nicho para espécies de roedores (Voles). <br> <br>
 [Repo <i class="fa fa-github"></i>](https://github.com/Tai-Rocha/Disjoint_birds_AM_AF)
