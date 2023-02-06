@@ -135,7 +135,7 @@ knitr::include_graphics("images/ARCGIS.png")
 ## Tainá Rocha {#title}
 
 ::: {style="text-align: justify"}
-Pesquisadora e cientista de dados com enfoque nos impactos de mudanças globais (mudanças climáticas e de uso e cobertura do solo). Meus interesses e trabalhos recentes são: **1.** Análises de dados climáticos e dados de uso e cobertura da terra em diferentes cenários/projeções **2.** Análises de dados de biodiversidade, **3.** Modelos preditivos **4.** Análises espaciais com SIG, **5.** Bioinformática, Linguagem R, Google Earth Engine, etc. Uso ferramentas, bases dados e plataformas de código aberto.Tenho interesse em boas práticas da ciência aberta, bons fluxos de trabalho, reprodutibilidade e princípios FAIR. <br>
+Pesquisadora e cientista de dados com enfoque nos impactos de mudanças globais ((mudanças climáticas e de uso e cobertura da terra). Meus interesses e trabalhos recentes são: **1.** Análises de dados climáticos e dados de uso e cobertura da terra em diferentes cenários/projeções **2.** Análises de dados de biodiversidade, **3.** Modelos preditivos **4.** Análises espaciais com SIG, **5.** Bioinformática, Linguagem R, Google Earth Engine, etc. Uso ferramentas, bases dados e plataformas de código aberto.Tenho interesse em boas práticas da ciência aberta, bons fluxos de trabalho, reprodutibilidade e princípios FAIR. <br>
 Versão exapandida em [PT](https://tai-rocha.github.io/TR_CV_PT.github.io/) ou [EN](https://tai-rocha.github.io/Tai-Rocha_CV.github.io/) 
 :::
 
@@ -143,7 +143,7 @@ Versão exapandida em [PT](https://tai-rocha.github.io/TR_CV_PT.github.io/) ou [
 
 ### Pequisadora de pós-doutorado <br>[Programa de Pesquisa em Biodiversidade (PPBio)](https://biologiadaconservacao.com.br/ppbio) 
 
-[Repo <i class="fa fa-github"></i>](https://github.com/PPBio) Impactos das mudanças globais sobre a biodiversidade brasileira e os serviços ecossistêmicos. <br/> Atividades: 1- Compilação de dados gerados pelo programa. 2- Avaliação do uso e cobertura da terra ([coleção 7 mapbiomas](https://mapbiomas.org/colecoes-mapbiomas-1?cama_set_language=pt-BR)) para os sítios PPBIo.
+[Repo <i class="fa fa-github"></i>](https://github.com/PPBio) Impactos das mudanças globais sobre a biodiversidade brasileira e nos serviços ecossistêmicos. <br/> Atividades: 1- Compilação de dados gerados pelo programa. 2- Avaliação do uso e cobertura da terra ([coleção 7 mapbiomas](https://mapbiomas.org/colecoes-mapbiomas-1?cama_set_language=pt-BR)) para os sítios PPBIo.
 
 Brasil
 
