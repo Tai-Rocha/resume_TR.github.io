@@ -87,7 +87,7 @@ knitr::include_graphics("images/CV_profile.jpg")
 
 ```{r}
  if(params$pdf_mode){
-  cat("[Versão CV-online disponível](https://tai-rocha.github.io/TR_CV_PT.github.io/)")
+  cat("[Versão CV-online disponível](https://tai-rocha.github.io/resume_TR.github.io/)")
   } else {
   cat("<i class='fas fa-download'></i> [Versão CV-PDF disponível](https://github.com/Tai-Rocha/resume_TR.github.io/raw/main/TR_resume_pt.pdf)")
 }
