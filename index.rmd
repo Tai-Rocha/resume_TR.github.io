@@ -95,6 +95,7 @@ knitr::include_graphics("images/CV_profile.jpg")
 
 ## Competências {#competências}
 
+#### Familiaridade e uso diário com:
 
 <i class="fab fa-r-project fa-2x"></i> 
 
@@ -106,6 +107,13 @@ knitr::include_graphics("images/CV_profile.jpg")
 
 <i class="fa fa-linux fa-2x" aria-hidden="true"></i>
  `Linux OS`
+ 
+```{r echo=FALSE, out.width="13%"}
+knitr::include_graphics("images/QGIS.png")
+``` 
+`GIS`
+ 
+#### Familiaridade e uso eventual de: 
  
 <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
  `Virtual Machines`
@@ -121,21 +129,23 @@ knitr::include_graphics("images/gee.jpeg")
 ``` 
 `Google Earth Engine`
 
-```{r echo=FALSE, out.width="13%"}
-knitr::include_graphics("images/QGIS.png")
-``` 
-`GIS`
-
 ```{r echo=FALSE, out.width="20%"}
 knitr::include_graphics("images/ARCGIS.png")
 ``` 
+
+#### Conhecimento básico e uso eventual de: 
+
+```{r echo=FALSE, out.width="20%"}
+knitr::include_graphics("images/py.jpg")
+``` 
+`Python`
 
 # Main
 
 ## Tainá Rocha {#title}
 
 ::: {style="text-align: justify"}
-Pesquisadora e cientista de dados com enfoque nos impactos de mudanças globais ((mudanças climáticas e de uso e cobertura da terra). Meus interesses e trabalhos recentes são: **1.** Análises de dados climáticos e dados de uso e cobertura da terra em diferentes cenários/projeções **2.** Análises de dados de biodiversidade, **3.** Modelos preditivos **4.** Análises espaciais com SIG, **5.** Bioinformática, Linguagem R, Google Earth Engine, etc. Uso ferramentas, bases dados e plataformas de código aberto.Tenho interesse em boas práticas da ciência aberta, bons fluxos de trabalho, reprodutibilidade e princípios FAIR. <br>
+Pesquisadora e cientista de dados com foco nos impactos de mudanças globais (mudanças climáticas e de uso e cobertura da terra). Meus interesses e atuação: **1.** Análises de dados climáticos e dados de uso e cobertura da terra em diferentes cenários/projeções **2.** Análises de dados da biodiversidade, **3.** Modelos preditivos **4.** Análises espaciais com SIG, **5.** Bioinformática, Linguagem R, Python, Google Earth Engine e outros. Uso ferramentas, bases dados e plataformas de código aberto. Tenho interesse em boas práticas da ciência aberta, bons fluxos de trabalho, reprodutibilidade e princípios FAIR. <br>
 Versão exapandida em [PT](https://tai-rocha.github.io/TR_CV_PT.github.io/) ou [EN](https://tai-rocha.github.io/Tai-Rocha_CV.github.io/) 
 :::
 
